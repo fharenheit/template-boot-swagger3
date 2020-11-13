@@ -1,0 +1,41 @@
+spring:
+  application:
+    name: template-spring-swagger
+
+#################
+## Web Server
+#################
+
+server:
+  port: 8080
+
+#################
+## Application
+#################
+
+app:
+
+#################
+## Logging
+#################
+
+logging:
+  level:
+    root: INFO
+    tomcat: INFO
+    freemarker: INFO
+    jdbc.connection: WARN
+    jdbc.audit: WARN
+    jdbc.sqlonly: WARN
+    jdbc.resultset: WARN
+    jdbc.resultsettable: DEBUG
+    org.hibernate: INFO
+    org.springframework: INFO
+    # org.springframework.web: TRACE
+    org.springframework.session: WARN
+    com.querydsl.sql: INFO
+    org.apache: INFO
+    com.zaxxer: INFO
+    io.datadynamics: DEBUG
+  group:
+    tomcat: org.apache.catalina, org.apache.coyote, org.apache.tomcat
